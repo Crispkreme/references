@@ -64,6 +64,25 @@ temp >= 30   # => true
 ```
 
 ## LESSON 5
+Tags: predicates
+
+Example:  
+```sh
+puts "Hi, my name is Ruby"
+puts "Whats is your name?"
+name = gets.chomp
+puts "Hi there #{name}, great to meet you"
+
+questions = gets.chomp
+if questions == "How old are you"
+  puts "I'm 20 years old"
+end
+
+if questions == "Where do you live?"
+  puts "Philippines"
+end
+```
+
 ## LESSON 6
 ## LESSON 7
 ## LESSON 8
