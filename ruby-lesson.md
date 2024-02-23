@@ -98,9 +98,18 @@ display_info(name, age)
 ## LESSON 7
 Tags: return
 
-Code:  
+Code 1:  
 ```sh
 def increase_by_10(number)
+  return number + 10
+end
+
+puts increase_by_10(20) # => 30
+```
+
+Code 2:  
+```sh
+def add(number)
   return number + 10
 end
 
