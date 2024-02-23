@@ -17,3 +17,18 @@ a = "sample variable"
 myVariable = "sample variable"
 my_variable = "sample variable"
 ```
+
+## LESSON 3
+Tags: comment
+
+Code:  
+```sh
+puts "Hello!" # I'm a comment
+```
+
+## LESSON 4
+## LESSON 5
+## LESSON 6
+## LESSON 7
+## LESSON 8
+## LESSON 9
