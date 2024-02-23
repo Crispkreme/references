@@ -84,6 +84,17 @@ end
 ```
 
 ## LESSON 6
+Tags: methods, arguments
+
+Code:  
+```sh
+def display_info(name, age)
+  puts "Name: #{name}"
+  puts "Age: #{age}"
+end
+
+display_info(name, age)
+```
 ## LESSON 7
 ## LESSON 8
 ## LESSON 9
