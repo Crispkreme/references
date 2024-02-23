@@ -2,5 +2,7 @@
 Tags: input, output
 Code:  
 ```sh
-ssh -T git@github.com -o StrictHostKeyChecking=no
+puts "Whats is your Name?"
+name = gets
+puts name
 ```
