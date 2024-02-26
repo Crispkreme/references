@@ -393,6 +393,20 @@ arr = %w(gum pine palm olive)
 end
 ```
 
+Associative array:
+```sh
+arr = [
+  ['cat', 13],
+  ['dog', 9]
+]
+
+arr[0]   # ['cat', 13]
+arr[0][0]   # cat
+arr[0][1]   # 13
+arr[1][0]   # dog
+arr[1][1]   # 9
+```
+
 Ways in doing loops
 Example 1:  
 ```sh
@@ -471,4 +485,39 @@ sorted.delete_at(0)
 sorted << 'myword'
 
 display(sorted.sort)
+```
+Exercise 2:
+input = <<-STR
+Stacy Brown-Philpot is the chief operating officer of TaskRabbit, where she’s responsible for scaling and expanding the marketplace. Before TaskRabbit, she spent nearly a decade leading global operations for Google’s flagship products. She served as Head of Online Sales and Operations for Google India and opened the office in Hyderabad. Stacy was also an entrepreneur in residence at Google Ventures.
+STR
+
+$words = input.split(/\s+|\.|\,/).select { |w| !w.empty? } # This uses a Regular Expression (we'll learn about those later)
+
+Generate the list of the unique words founf in the input string, count how many times each occurs and print them, You should number the lines of the output as follows:
+- 1: and 3 occurrences
+- 2: for 3 occurrences
+- 3: the 3 occurrences
+
+Solution 1:  
+```sh
+def frequency(word)
+  arr = $words.select do |sample|
+    word == sample
+  end
+  arr.size
+end
+
+frequencies = $words.unique.map do |word|
+  [word, frequency(word)]
+end
+
+sorted = frequencies.sort do |a, b|
+  b[-1] <=> a[-1]
+end
+
+sorted.each do |pair|
+  puts "#{pair[-1]} to #{pair[-1]} occurencies
+end
+
+p frequencies
 ```
