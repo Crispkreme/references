@@ -325,13 +325,18 @@ arr << 'g'
 ```
 
 ## LESSON 10
-Tags: array, loop
+Tags: array, loop, map, select, sort, find, inclusion, comparison
 
 - [1, 2, 3, 4].size            # => array size
 - [1, 2, 3, 4].reverse         # => array reverse
 - [1, 2, 3, 3, 4].uniq         # => array unique
 - [1, 2, 3, 3, 4].sort.reverse # => array chaining
 
+Comparison Operator
+- 1 <=> 1  # => 0
+- 1 <=> -1 # => 1
+- 1 <=> 2  # => -1
+  
 Sorting: 
 sorting an elements exists
 ```sh
@@ -345,6 +350,39 @@ check if an elements exists
 arr = %w(cat dog bee)
 arr.include?('dog')   # true
 arr.include?('horse') # false
+```
+
+Find: 
+finding specific character inside the array
+```sh
+result = ['gum', 'pine', 'palm', 'olive'].find do |tree|
+  tree[0] == 'o'
+  puts tree
+end
+```
+Select: 
+selecting the specific words inside the array
+```sh
+result = ['gum', 'pine', 'palm', 'olive'].select do |tree|
+  tree[0] == 'o'
+  puts tree
+end
+```
+
+Map: 
+mapping the data inside the array
+```sh
+%w(gum pine palm olive).map do |tree|
+  tree.upcase
+  puts tree
+end
+```
+
+Sort with a block: 
+```sh
+%w(gum pine palm olive).sort do |a,b|
+  a.length <=> b.length
+end
 ```
 
 Ways in doing loops
