@@ -255,13 +255,13 @@ hyp(op_a, op_b) if operator == 'hyp'
 ## LESSON 9
 Tags: string, formatting
 
-"hi there" .reverse # "ereht ih" => reverse functionality
-"hi there" .upcase  # "HI THERE" => uppercase functionality
-"hi there" .lenght  # "8"        => length functionality
-"hi there"[3]       # "t"        => cardinal indexing functionality
-"hi there"[3..5]    # "the"      => slicing functionality
-"hi there"[-2]      # "r"        => negative indexing functionality
-"hi there"[-4..-2]  # "her"      => negative indexing functionality
+- "hi there" .reverse # "ereht ih" => reverse functionality
+- "hi there" .upcase  # "HI THERE" => uppercase functionality
+- "hi there" .lenght  # "8"        => length functionality
+- "hi there"[3]       # "t"        => cardinal indexing functionality
+- "hi there"[3..5]    # "the"      => slicing functionality
+- "hi there"[-2]      # "r"        => negative indexing functionality
+- "hi there"[-4..-2]  # "her"      => negative indexing functionality
 
 Exercise:
 The quick brown fox jumped over the lazy dog
