@@ -518,7 +518,7 @@ sorted = frequencies.sort do |a, b|
 end
 
 sorted.each do |pair|
-  puts "#{index}: #{pair[-1]} to #{pair[-1]} occurencies
+  puts "#{index + 1}: #{pair[-1]} to #{pair[-1]} occurencies
 end
 
 p frequencies
