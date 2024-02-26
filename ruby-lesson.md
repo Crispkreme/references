@@ -135,4 +135,23 @@ puts describe_temp(85)
 ```
 
 ## LESSON 8
+Tags: math
+
+Examples builtin operation
+1 + 1  # Addition
+1 - 1  # Subtractions
+1 * 1  # Multiplication
+1 / 1  # Divisions
+1 ** 1 # Exponents
+10 % 3 # Modulo
+
+Code 1:  
+```sh
+def divide(number, denominator)
+  number.to_f / denominator
+end
+
+puts divide(20, 7)
+```
+
 ## LESSON 9
