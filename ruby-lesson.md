@@ -135,15 +135,21 @@ puts describe_temp(85)
 ```
 
 ## LESSON 8
-Tags: math
+Tags: math, rounding, formatting
 
 Examples builtin operation
-- 1 + 1  # Addition
-- 1 - 1  # Subtractions
-- 1 * 1  # Multiplication
-- 1 / 1  # Divisions
-- 1 ** 1 # Exponents
-- 10 % 3 # Modulo
+- 1 + 1        # Addition
+- 1 - 1        # Subtractions
+- 1 * 1        # Multiplication
+- 1 / 1        # Divisions
+- 1 ** 1       # Exponents
+- 10 % 3       # Modulo
+- number.to_f  # integer => float
+- number.to_i  # float => integer
+- number.round # rounding the integer
+- number.floor # always rounding down with floor
+- number.ceil  # always rounding up with ceil
+- sprintf("%.2f", 100.7676) # limit number to 2 decimal places
 
 Code 1:  
 ```sh
