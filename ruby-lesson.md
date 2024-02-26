@@ -253,17 +253,39 @@ sphere_area(op_a) if operator == 'sphere_area'
 hyp(op_a, op_b) if operator == 'hyp'
 ```
 ## LESSON 9
-Tags: string, formatting
+Tags: string, formatting, concatenation
 
-- "hi there" .reverse # "ereht ih" => reverse functionality
-- "hi there" .upcase  # "HI THERE" => uppercase functionality
-- "hi there" .lenght  # "8"        => length functionality
-- "hi there"[3]       # "t"        => cardinal indexing functionality
-- "hi there"[3..5]    # "the"      => slicing functionality
-- "hi there"[-2]      # "r"        => negative indexing functionality
-- "hi there"[-4..-2]  # "her"      => negative indexing functionality
+- "hi there" .reverse # "ereht ih"  => reverse functionality
+- "hi there" .upcase  # "HI THERE"  => uppercase functionality
+- "hi there" .lenght  # "8"         => length functionality
+- "hi there"[3]       # "t"         => cardinal indexing functionality
+- "hi there"[3..5]    # "the"       => slicing functionality
+- "hi there"[-2]      # "r"         => negative indexing functionality
+- "hi there"[-4..-2]  # "her"       => negative indexing functionality
+- "foo" + "bar"       # "foobar"    => concatenation functionality
+- "foo" * 3           # "foofoofoo" => multiplication functionality
+- "hello" .reverse!   # "olleh"     => mutation functionality
+- "abraca".gsub('a','A') 
 
-Exercise:
+Formatting the Characters
+Code 1:  
+```sh
+#replace character
+"abracadabra" .gsub('a','A') # "AbrAcAdAbrA"
+
+#remove character
+"abracadabra" .gsub('a','') # "brcdbr"
+
+#replace words
+"ken's pet" .gsub('pet','dog') # "ken's dog"
+
+#mutation functions
+str = "hello world"
+str.gsub!('o', '')
+puts str # "hell wrld"
+```
+
+Exercise 1:
 The quick brown fox jumped over the lazy dog
 - Reverse the string
 - Capitalize every letter
@@ -272,7 +294,7 @@ The quick brown fox jumped over the lazy dog
 - Generate a new string which is the last 2 characters of the input string
 - Determine the 5th character of the strings
 
-Code 1:  
+Solution 1:  
 ```sh
 str = The quick brown fox jumped over the lazy dog
 str.reverse
@@ -281,4 +303,45 @@ str.length
 str[0..9]
 str[-2..-1]
 str[4]
+```
+
+Exercise 2:
+Given the array:
+arr = ['a','b','c','c','d','e','f']
+- Retrieve the 3rd elements (counting from 1)
+- Retrieve the first two elements
+- Retrieve the last elements
+- Delete the duplicate 'c' character
+- Add the character 'g', to the end of the array
+
+Solution 2:  
+```sh
+arr = ['a','b','c','c','d','e','f']
+arr[2]
+arr[0..2]
+arr[-1]
+arr.deleted_at(3)
+arr << 'g'
+```
+## LESSON 10
+Tags: array, loop
+
+Ways in doing loops
+Example 1:  
+```sh
+# foor loop 1
+animals = %w(fox horse dog cat)
+for animal in animals
+  puts animal
+end
+
+# foor loop 2
+animals = %w(fox horse dog cat)
+animals.each do |animal|
+  puts animal
+end
+
+# foor loop 3
+animals = %w(fox horse dog cat)
+animals.each { |animal| puts animal }
 ```
