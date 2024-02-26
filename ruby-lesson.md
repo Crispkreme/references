@@ -323,8 +323,29 @@ arr[-1]
 arr.deleted_at(3)
 arr << 'g'
 ```
+
 ## LESSON 10
 Tags: array, loop
+
+- [1, 2, 3, 4].size            # => array size
+- [1, 2, 3, 4].reverse         # => array reverse
+- [1, 2, 3, 3, 4].uniq         # => array unique
+- [1, 2, 3, 3, 4].sort.reverse # => array chaining
+
+Sorting: 
+sorting an elements exists
+```sh
+arr = [7,4,6,3,5]
+arr.sort  # [3,4,5,6,7]
+```
+
+Inclusion: 
+check if an elements exists
+```sh
+arr = %w(cat dog bee)
+arr.include?('dog')   # true
+arr.include?('horse') # false
+```
 
 Ways in doing loops
 Example 1:  
@@ -344,4 +365,57 @@ end
 # foor loop 3
 animals = %w(fox horse dog cat)
 animals.each { |animal| puts animal }
+```
+Exercise 1:
+- Print out the words one line at a time
+- Sort the words and print again
+- Reverse the sorted words and print again
+- Add an extra word, remove the first elements, re-sort and print
+
+Given function
+It assign a words into an array
+
+input = <<-STR
+Stacy Brown-Philpot is the chief operating officer of TaskRabbit, where she’s responsible for scaling and expanding the marketplace. Before TaskRabbit, she spent nearly a decade leading global operations for Google’s flagship products. She served as Head of Online Sales and Operations for Google India and opened the office in Hyderabad. Stacy was also an entrepreneur in residence at Google Ventures.
+STR
+
+$words = input.split(/\s+|\.|\,/).select { |w| !w.empty? } # This uses a Regular Expression (we'll learn about those later)
+
+Solution 1:  
+```sh
+$words.each do |word|
+  puts word
+end
+
+$words.sort!
+$words.reverse!
+$words << 'cat'
+$words.deleted_at(0)
+$words.sort!
+
+$words.sort.each do |word|
+  puts word
+end
+```
+Solution 2:  
+```sh
+def display(array)
+  array.each do |elem|
+    puts elem
+  end
+end
+
+display($words)
+sorted = $words.sort
+
+puts "\n\nSorted\n"
+display(sorted)
+
+puts "\n\nSorted Reverse\n"
+display(sorted.reverse)
+
+sorted.delete_at(0)
+sorted << 'myword'
+
+display(sorted.sort)
 ```
