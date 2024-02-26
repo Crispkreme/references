@@ -159,5 +159,56 @@ end
 
 puts divide(20, 7)
 ```
+Exercise:
+Build a calculator. It should take two numbers and an operand and output the result formatted to two decimal places. Operand should be any of:
+- Add
+- Subtract
+- Divide
+- Multiply
 
+Solution:  
+```sh
+
+def add(a, b)
+  display(a + b)
+end
+
+def divide(a, b)
+  display(a / b)
+end
+
+def subract(a, b)
+  display(a / b)
+end
+
+def multiply(a, b)
+  display(a * b)
+end
+
+def power(a, b)
+  display(a ** b)
+end
+
+def display(result)
+  put sprintf("%.2f", result)
+end
+
+puts "Welcome to Basic Calculator"
+
+puts "What is the first operand"
+op_a = gets.chomp.to_f
+
+puts "What is the second operand"
+op_b = gets.chomp.to_f
+
+puts "What operator would you like to use?"
+operator = gets.chomp
+
+add(op_a, op_b) if operator == 'add'
+subract(op_a, op_b) if operator == 'subract'
+multiply(op_a, op_b) if operator == 'multiply'
+power(op_a, op_b) if operator == 'power'
+divide(op_a, op_b) if operator == 'divide'
+
+```
 ## LESSON 9
