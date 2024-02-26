@@ -115,6 +115,24 @@ end
 
 puts increase_by_10(20) # => 30
 ```
+Exercise:
+- Add 2 numbers
+- Multiply 3 numbers
+- Return a string with an interpolated value (e.g. "the temperature outside is 'value'")
+- Return a description of the temperature provided (e.g. it's hot)
+
+Solution:  
+```sh
+def describe_temp(value)
+  if value > 85
+    "It's hot"
+  else
+    "It's not hot"
+  end
+end
+
+puts describe_temp(85)
+```
 
 ## LESSON 8
 ## LESSON 9
