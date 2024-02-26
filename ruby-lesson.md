@@ -372,17 +372,16 @@ Exercise 1:
 - Reverse the sorted words and print again
 - Add an extra word, remove the first elements, re-sort and print
 
-Given function
-# It assign a words into an array
+Solution 1:  
+```sh
 
+# It assign a words into an array
 input = <<-STR
 Stacy Brown-Philpot is the chief operating officer of TaskRabbit, where she’s responsible for scaling and expanding the marketplace. Before TaskRabbit, she spent nearly a decade leading global operations for Google’s flagship products. She served as Head of Online Sales and Operations for Google India and opened the office in Hyderabad. Stacy was also an entrepreneur in residence at Google Ventures.
 STR
 
 $words = input.split(/\s+|\.|\,/).select { |w| !w.empty? } # This uses a Regular Expression (we'll learn about those later)
 
-Solution 1:  
-```sh
 $words.each do |word|
   puts word
 end
@@ -399,6 +398,14 @@ end
 ```
 Solution 2:  
 ```sh
+
+# It assign a words into an array
+input = <<-STR
+Stacy Brown-Philpot is the chief operating officer of TaskRabbit, where she’s responsible for scaling and expanding the marketplace. Before TaskRabbit, she spent nearly a decade leading global operations for Google’s flagship products. She served as Head of Online Sales and Operations for Google India and opened the office in Hyderabad. Stacy was also an entrepreneur in residence at Google Ventures.
+STR
+
+$words = input.split(/\s+|\.|\,/).select { |w| !w.empty? } # This uses a Regular Expression (we'll learn about those later)
+
 def display(array)
   array.each do |elem|
     puts elem
