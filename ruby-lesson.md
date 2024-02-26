@@ -159,7 +159,7 @@ end
 
 puts divide(20, 7)
 ```
-Exercise:
+Example:
 Build a calculator. It should take two numbers and an operand and output the result formatted to two decimal places. Operand should be any of:
 - Add
 - Subtract
@@ -210,5 +210,46 @@ multiply(op_a, op_b) if operator == 'multiply'
 power(op_a, op_b) if operator == 'power'
 divide(op_a, op_b) if operator == 'divide'
 
+```
+
+Exercise:
+Enhace your calculator by adding the following capabilities:
+- Calculate the square root of a number
+- Calculate the area of a sphere given its diameter
+- Calculate the length of the hypotenuse of a triangle given the other two sides
+
+Solution:  
+```sh
+
+def square_root(value)
+  display(Math.sqrt(value))
+end
+
+def sphere_area(diameter)
+  # pi * D ^ 2
+  display(Math::PI * diameter ** 2)
+end
+
+def hyp(a, b)
+  # A ^ 2 + B ^ 2
+  display(Math.sqrt(a ** 2 + b ** 2))
+end
+
+puts "Welcome to Advance Calculator"
+
+puts "What operator would you like to use?"
+operator = gets.chomp
+
+puts "What is the first operand"
+op_a = gets.chomp.to_f
+
+if operator != 'sqrt' && operator != 'sphere_area'
+  puts "What is the second operand"
+  op_b = gets.chomp.to_f
+end
+
+square_root(op_a) if operator == 'sqrt'
+sphere_area(op_a) if operator == 'sphere_area'
+hyp(op_a, op_b) if operator == 'hyp'
 ```
 ## LESSON 9
