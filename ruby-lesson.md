@@ -138,12 +138,12 @@ puts describe_temp(85)
 Tags: math
 
 Examples builtin operation
-1 + 1  # Addition
-1 - 1  # Subtractions
-1 * 1  # Multiplication
-1 / 1  # Divisions
-1 ** 1 # Exponents
-10 % 3 # Modulo
+- 1 + 1  # Addition
+- 1 - 1  # Subtractions
+- 1 * 1  # Multiplication
+- 1 / 1  # Divisions
+- 1 ** 1 # Exponents
+- 10 % 3 # Modulo
 
 Code 1:  
 ```sh
