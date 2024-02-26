@@ -523,3 +523,43 @@ end
 
 p frequencies
 ```
+
+## LESSON 11
+Tags: iteration
+
+Up to:
+```sh
+result = 0
+1.upto(10) do |num|
+  result += num
+end
+puts result
+```
+Down to:
+```sh
+50.downto(10) do |num|
+  puts num
+end
+```
+
+Exercise 1:
+Do the following:
+- Sum the numbers from 1 to 100
+- Given an array containing 10 items, delete the first item and print it Repeat 3 times
+
+Solution 1:  
+```sh
+result = 0
+1.upto(100) do |num|
+result += num
+end
+puts result
+
+arr = %w(jane john mary kate elle simon dan kumar wie charlotte)
+4.times do
+  puts arr.deleted_at(0)
+end
+
+puts "New array:"
+puts arr
+```
