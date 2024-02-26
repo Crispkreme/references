@@ -385,6 +385,14 @@ Sort with a block:
 end
 ```
 
+Array indexing:
+```sh
+arr = %w(gum pine palm olive)
+  arr.each_with_index do |tree, index|
+  puts "#{index}: #{tree}"
+end
+```
+
 Ways in doing loops
 Example 1:  
 ```sh
