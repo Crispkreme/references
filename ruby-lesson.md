@@ -563,3 +563,52 @@ end
 puts "New array:"
 puts arr
 ```
+## LESSON 11
+Tags: range
+
+Exercise 1:
+Do the following:
+- Print every character from A-K
+- Use a range, write a method to determine if a given float number is between two values.
+- Print all multiples of 7 up to 140 (use range!)
+- Write a method that returns the intersection of two ranges as a ranges or nil if they do not intersect (overlap)
+
+Solution 1:  
+```sh
+
+def included?(range, number)
+
+  # method 1
+  if range.exclude_end?
+    number >= range.begin && number < range.end
+  else
+    number >= range.begin && number <= range.end
+  end
+
+  # method 2
+  range.cover?(number)
+
+end
+
+puts included?(1.0..10.9, 5.7)
+
+1.upto(20) do |num|
+puts num * 7
+
+def intersect?(range1, range2)
+  if range1.begin < range2.begin
+    if range1.end < range2.begin
+      nil
+    else
+      (range2.begin...range1.end)
+    end
+  else
+    if range2.end < range1.begin
+      nil
+    else
+      (range1.begin...range2.end)
+    end
+  end
+end
+
+```
