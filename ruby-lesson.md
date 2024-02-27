@@ -563,7 +563,7 @@ end
 puts "New array:"
 puts arr
 ```
-## LESSON 11
+## LESSON 12
 Tags: range
 
 Exercise 1:
@@ -610,7 +610,7 @@ def intersect?(range1, range2)
   end
 end
 ```
-## LESSON 12
+## LESSON 13
 Tags: hash
 
 - nil is has no value or like null
