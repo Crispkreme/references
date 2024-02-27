@@ -4,7 +4,7 @@ Tags: input, output
 Code:  
 ```sh
 puts "Whats is your Name?"
-name = gets
+age = gets
 puts name
 ```
 
@@ -719,4 +719,120 @@ if user
 else
   puts "No user found"
 end
+```
+
+## LESSON 15
+Tags: object basics, constructor, instance variables
+
+Exercise 1:
+Create an user class that has an name, email, and age attributes. create an "instance" of the user, set its attributes and then print them out.
+
+Solution 1:  
+```sh
+
+class User
+  attr_accessor :name, :email, :age
+end
+
+user = User.new
+user.name = 'Marvin'
+user.email = 'ramosmarvin@sample.com'
+user.age = 26
+
+puts user.name
+puts user.email
+puts user.age
+```
+
+Exercise 2:
+Create an user class that has an name, email, and age attributes. create an "instance" of the user, set its attributes and then print them out.
+
+Solution 2:  
+```sh
+
+class User
+  attr_accessor :name, :email, :age
+
+  def initialize(name, email)
+    self.name = name
+    self.email = email
+    self.age = age
+  end
+
+  def print
+    puts "#{self.name}"
+    puts "#{self.email}"
+    puts "#{self.age}"
+  end
+end
+
+user = User.new('Marvin', 'ramosmarvin@sample.com', 26)
+user.print
+```
+
+Exercise 3:
+Create a method on your user class to celebrate the users birthday. The method should print "Happy Birthday" and increment the user's age by 1.
+
+Solution 3:  
+```sh
+
+class User
+  attr_accessor :name, :email, :age
+
+  def initialize(name, email)
+    self.name = name
+    self.email = email
+    self.age = age
+  end
+
+  def celebrate_birthday!
+    puts "Happy birthday!"
+    self.age += 1
+  end
+end
+
+user = User.new('Marvin', 'ramosmarvin@sample.com', 26)
+puts user.age
+user.celebrate_birthday!
+puts user.age
+```
+
+Example 1:
+Create a method on your user class to celebrate the users birthday. The method should print "Happy Birthday" and increment the user's age by 1.
+
+Solution 1:  
+```sh
+class User
+  def initialize(name, email)
+    self.name = name
+    self.email = email
+    self.age = age
+  end
+
+  def name=(name)
+    @name = name
+  end
+  def name
+    @name
+  end
+
+  def email=(email)
+    @email = email
+  end
+  def email
+    @email
+  end
+
+  def age=(age)
+    @age = age
+  end
+  def age
+    @age
+  end 
+end
+
+user = User.new('Marvin', 'ramosmarvin@sample.com', 26)
+puts user.age
+user.celebrate_birthday!
+puts user.age
 ```
