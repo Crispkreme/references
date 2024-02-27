@@ -575,7 +575,6 @@ Do the following:
 
 Solution 1:  
 ```sh
-
 def included?(range, number)
 
   # method 1
@@ -610,5 +609,87 @@ def intersect?(range1, range2)
     end
   end
 end
+```
+## LESSON 12
+Tags: hash
 
+- nil is has no value or like null
+- include check if value is not set
+
+Example 1:  
+```sh
+balances = {
+  3 => 'c',
+  1 => 'a',
+  2 => 'b',
+  4 => 'd'
+}
+
+# method 1
+hash.keys.sort.each do |key|
+  puts "#{key} : #{hash[key]}"
+end
+
+# method 2
+sorted_hash = {}
+hash.keys.sort.each do |key|
+  sorted_hash[key] = hash[key]
+end
+
+# method 3
+sorted_array = hash.sort do |(key1, val1), (key2, val2)|
+  key1 <=> key2
+end
+sorted_hash = Hash[sorted_array] # return associative array
+
+# converting associative array to hash
+hash = Hash[['a',1],['b',2]] # {'a' => 1, 'b' => 2}
+```
+
+Exercise 1:
+Create a hash containing people and their current bank balances
+Do the following:
+- Print all the names and bank balances to the screen
+- Everyone wants to pool thier money to buy a car, how much they do have?
+
+Solution 1:  
+```sh
+balances = {
+  'Dan'   => 1000,
+  'Jess'  => 1200,
+  'Bryan' => 1500,
+  'Kath'  => 2000,
+}
+
+sum = 0
+balances.each_pair do |name, balance|
+  sum += balance
+  puts "#{name} has a $#{balance}"
+end
+
+puts "The total balance is $#{sum}"
+```
+
+Exercise 2:
+Create a method that sorts a hash in key descending order and returns the sorted hash
+
+Solution 2:  
+```sh
+drivers = {
+  4 => 'Alonso',
+  1 => 'Vettel',
+  3 => 'Raikonnen',
+  2 => 'Ricciardo'
+}
+
+def sort(hash)
+  sorted = {}
+  hash.keys.sort.reverse.each do |key|
+    sorted[key] = hash[key]
+  end
+
+  sorted
+end
+
+puts sort(drivers)
 ```
