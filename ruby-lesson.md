@@ -810,7 +810,7 @@ class User
   end
 
   def name=(name)
-    @name = name
+    @name = name.downcase
   end
   def name
     @name
@@ -831,8 +831,4 @@ class User
   end 
 end
 
-user = User.new('Marvin', 'ramosmarvin@sample.com', 26)
-puts user.age
-user.celebrate_birthday!
-puts user.age
 ```
