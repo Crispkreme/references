@@ -693,3 +693,30 @@ end
 
 puts sort(drivers)
 ```
+## LESSON 14
+Tags: symbols
+
+Exercise 1:
+Create an array of users. Each 'users' in the array should be represented by a hash. You can store the users details such as name and email address using symbols
+do the following:
+- Search for a user by thier name
+- Print the email address of that user
+
+Solution 1:  
+```sh
+users = [
+  {name: 'Dan', email: 'dan@coderdan.com'},
+  {name: 'Lauren', email: 'lauren@coderlauren.com'},
+  {name: 'Steve', email: 'steve@codersteve.com'},
+]
+
+user = users.find do |user|
+  user[:name] == 'Missing'
+end
+
+if user
+  puts user[:email]
+else
+  puts "No user found"
+end
+```
