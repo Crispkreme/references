@@ -847,10 +847,51 @@ class User
   end
 
   def to_s
-    "#{self.name},{self.age},{self.email}"
+    "#{self.name}, {self.age}, {self.email}"
+  end
+
+  def inspect
+    "#{self.name}, {self.age}, {self.email}"
   end
 end
 
 user = User.new('Marvin', 'ramosmarvin@sample.com', 26)
 puts user
+```
+
+Exercise 4:
+Define to_s and inspect methods on your User class
+Test them by calling puts and p directly on a user object
+
+Solution 4:  
+```sh
+
+class User
+  attr_accessor :name, :email, :age
+
+  def initialize(name, email)
+    self.name = name
+    self.email = email
+    self.age = age
+  end
+
+  def celebrate_birthday!
+    puts "Happy birthday!"
+    self.age += 1
+  end
+
+  def to_s
+    self.name
+    self.email
+    self.age
+  end
+
+  def inspect
+    "#{self.name}, {self.age}, {self.email}"
+  end
+end
+
+user = User.new('Marvin', 'ramosmarvin@sample.com', 26)
+puts user
+p user
 ```
