@@ -972,6 +972,8 @@ Solution 1:
 ## LESSON 17
 Tags: inheritance
 
+- Model real life # like objects in general, inheretance aims to reflect the real world.
+
 Exercise 1:
 Create a project class. 
 The project should have a name and a budget. It should also have an array of team members (for now you can store team members as a string).
@@ -1068,10 +1070,10 @@ Solution 1:
   end
 
   project = Project.new("Cafe Website", 5000)
-  project.members << ProjectManager.new('Dan', 10000)
-  project.members << Developer.new('Robin', 80000)
-  project.members << Developer.new('Joe', 80000)
-  project.members << Developer.new('James', 75000)
+  project.members << ProjectManager.new("Dan", 10000)
+  project.members << Developer.new("Robin", 80000)
+  project.members << Developer.new("Joe", 80000)
+  project.members << Developer.new("James", 75000)
 
   puts project.members
   puts project.total_day_rate
