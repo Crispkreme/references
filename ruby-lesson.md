@@ -722,7 +722,7 @@ end
 ```
 
 ## LESSON 15
-Tags: object basics, constructor, instance variables
+Tags: object basics, constructor, instance variables, inspecting objects
 
 Exercise 1:
 Create an user class that has an name, email, and age attributes. create an "instance" of the user, set its attributes and then print them out.
@@ -830,5 +830,27 @@ class User
     @age
   end 
 end
+```
+Example 3:
+to_s
 
+Solution 3:  
+```sh
+
+class User
+  attr_accessor :name, :email, :age
+
+  def initialize(name, email)
+    self.name = name
+    self.email = email
+    self.age = age
+  end
+
+  def to_s
+    "#{self.name},{self.age},{self.email}"
+  end
+end
+
+user = User.new('Marvin', 'ramosmarvin@sample.com', 26)
+puts user
 ```
