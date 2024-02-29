@@ -971,3 +971,110 @@ Solution 1:
 
 ## LESSON 17
 Tags: inheritance
+
+Exercise 1:
+Create a project class. 
+The project should have a name and a budget. It should also have an array of team members (for now you can store team members as a string).
+
+Implement classes for the following types:
+- Project manager
+- Developer
+- Designer
+
+Each of your classes should have a name and salary attributes. For each class you should implement a method which returns a string describing the role of that type. For example, for the Project Manager type it might simply return "Project Manager".
+
+Solution 1:  
+```sh
+
+  class ProjectManager
+    attr_accessor :name, :salary
+
+    def initialize(name, salary)
+      @name = name
+      @salary = salary
+    end
+
+    def role
+      "Project Manager"
+    end
+    def day_rate
+      salary.to_f / 210
+    end
+    def to_s
+      "#{role} #{self.name} #{self.day_rate}"
+    end
+  end
+
+  class Developer
+    attr_accessor :name, :salary
+
+    def initialize(name, salary)
+      @name = name
+      @salary = salary
+    end
+
+    def role
+      "Developer"
+    end
+    def day_rate
+      salary.to_f / 210
+    end
+    def to_s
+      "#{role} #{self.name} #{self.day_rate}"
+    end
+  end
+
+  class Designer
+    attr_accessor :name, :salary
+    def initialize(name, salary)
+      @name = name
+      @salary = salary
+    end
+  
+    def role
+      "Designer"
+    end
+    def day_rate
+      salary.to_f / 210
+    end
+    def to_s
+      "#{role} #{self.name} #{self.day_rate}"
+    end
+  end
+  
+  class Project
+    attr_accessor :name, :budget
+    attr_reader :members
+
+    def initialize(name, budget)
+      @name = name
+      @budget = budget
+      @members = []
+    end
+
+    def total_day_rate
+      sum = 0
+      @members.each do |member|
+        sum += member.day_rate
+      end
+      sum
+    end
+
+    def sorted_members
+      @members.sort do |a,b|
+        a.day_rate <=> b.day_rate
+      end
+    end
+  end
+
+  project = Project.new("Cafe Website", 5000)
+  project.members << ProjectManager.new('Dan', 10000)
+  project.members << Developer.new('Robin', 80000)
+  project.members << Developer.new('Joe', 80000)
+  project.members << Developer.new('James', 75000)
+
+  puts project.members
+  puts project.total_day_rate
+  puts "Sorted by Day rate" 
+  puts project.sorted_members
+```
