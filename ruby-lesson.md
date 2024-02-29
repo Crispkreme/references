@@ -831,6 +831,7 @@ class User
   end 
 end
 ```
+
 Example 3:
 to_s
 
@@ -895,3 +896,78 @@ user = User.new('Marvin', 'ramosmarvin@sample.com', 26)
 puts user
 p user
 ```
+## LESSON 16
+Tags: time, time instantiation
+
+- Absolute Time #specific clock or calendar entry e.g. Mar 9, 2023 08:00
+- Relative times # a duration e.g. 3 hours, 41 minutes and 8 seconds
+- Seconds since the epoch # time on most modern computers is stored as a number of the seconds. e.g. January 1, 1970 00:00
+
+Example 1:
+Day method
+
+Solution 1:  
+```sh
+if time.monday?
+  puts "Needed a coffee"
+end
+```
+
+Example 2:
+Time Formatting
+
+Solution 2:  
+```sh
+  time.strftime("%B %d, %Y") # January 16, 2012
+
+  def print_time_24
+    time.now.strftime('%H:%M')
+  end
+
+  def print_time_12
+    time.now.strftime('%I:%M %P')
+  end
+
+  pearl_harbor = Time.now(1941, 12, 7)
+  jfk = Time.now(1963, 11, 22)
+  moon = Time.now(1969, 7, 20, 20, 18)
+  Time.now.to_i / (60 * 60 * 24 * 365.0)
+
+  puts print_time_24
+  puts print_time_12
+```
+
+Exercise 1:
+Build a clock
+Your clock should update every second and print out the time in a human readable format.
+
+Solution 1:  
+```sh
+
+  # method 1
+  loop do
+    print "\r" + Time.now("%H:%M:%S on %B %d, %Y")
+    sleep 1
+  end
+
+  # method 2
+  class Clock
+
+    def run
+      loop do
+        print "\r#{time_string}"
+        sleep 1
+      end
+    end
+
+    def time_string
+      Time.now("%H:%M:%S on %B %d, %Y")
+    end
+
+  end
+  clock = Clock.new
+  clock.run
+```
+
+## LESSON 17
+Tags: inheritance
