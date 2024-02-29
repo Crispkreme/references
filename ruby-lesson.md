@@ -987,8 +987,7 @@ Each of your classes should have a name and salary attributes. For each class yo
 
 Solution 1:  
 ```sh
-
-  class ProjectManager
+  class Member
     attr_accessor :name, :salary
 
     def initialize(name, salary)
@@ -996,51 +995,30 @@ Solution 1:
       @salary = salary
     end
 
+    def day_rate
+      salary.to_f / 210
+    end
+
+    def to_s
+      "#{role} #{self.name} #{self.day_rate}"
+    end
+  end
+
+  class ProjectManager < Member
     def role
       "Project Manager"
     end
-    def day_rate
-      salary.to_f / 210
-    end
-    def to_s
-      "#{role} #{self.name} #{self.day_rate}"
-    end
   end
 
-  class Developer
-    attr_accessor :name, :salary
-
-    def initialize(name, salary)
-      @name = name
-      @salary = salary
-    end
-
+  class Developer < Member
     def role
       "Developer"
     end
-    def day_rate
-      salary.to_f / 210
-    end
-    def to_s
-      "#{role} #{self.name} #{self.day_rate}"
-    end
   end
 
-  class Designer
-    attr_accessor :name, :salary
-    def initialize(name, salary)
-      @name = name
-      @salary = salary
-    end
-  
+  class Designer < Member
     def role
       "Designer"
-    end
-    def day_rate
-      salary.to_f / 210
-    end
-    def to_s
-      "#{role} #{self.name} #{self.day_rate}"
     end
   end
   
@@ -1079,4 +1057,16 @@ Solution 1:
   puts project.total_day_rate
   puts "Sorted by Day rate" 
   puts project.sorted_members
+```
+
+Exercise 2:
+Create a product class with a price and quantity attributes. 
+- Subclass (extend) Product with a Wine class
+- The wine class should have a variety and alcohol % attributes
+
+Solution 2:  
+```sh
+if time.monday?
+  puts "Needed a coffee"
+end
 ```
