@@ -18,4 +18,5 @@ ruby 2.3.1p112
 Code:  
 ```sh
 sqlite3 --version
+3.45.1 2024-01-30 16:01:20 e876e51a0ed5c5b3126f52e532044363a014bc594cfefa87ffb5b82257cc467a (64-bit)
 ```
