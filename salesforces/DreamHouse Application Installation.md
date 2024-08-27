@@ -1,0 +1,15 @@
+## Installation Setup
+- Scroll to the bottom of this page to launch Trailhead Playground [Startup ] 
+- Click.
+- Application launcher (Application launcher iconFrom ) [Playground Starter ] 
+- Find and select.
+- If you do not see the Playground Starter application,Installation link for this packageClick on Trailhead help"Installing packages and applications to complete Trailhead's Challenge"Please refer to. Skip the rest of the steps.
+- When you see the Playground Starter application,[Install a Package (Package Installation )] Click the tab.
+- [Package ID (Package ID )] In item 04t3h000004bhxlAAA Paste,
+- [Install (Installation )] Click.
+- [Install all users ] Select [Installation ] Click.
+- If you see a prompt for approval of third-party access,[Yes ],[Continue ] 
+- Click in order. The map of the Dreamhouse application will now show updated information.
+- Once the installation is complete,[Completed ] Click.
+- Next, application launcher (Application launcher iconReturn to ),[Dreamhouse] Search and select the application.
+- [Settings ] Click the tab, then [Import data ] Click the button. This will capture sample data such as properties, trading partner managers and brokers in your application.
