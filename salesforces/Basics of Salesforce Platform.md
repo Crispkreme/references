@@ -32,19 +32,19 @@ Dreamhouse functionalities
 - is a real estate company, it has unique needs for industry and business models.
 
 Terms
-**Salesforce Application** - A set of objects, items, and other features that support business processes.
-**Object** - A table in the Salesforce database that stores certain types of information.
-**Standard Object** - (Trading partners, business owners, etc.).
-**Custom Object** - (Figure Property (Property ) Objects, etc.).
-**Organization** - An organization refers to a specific instance of Salesforce.
-**Item** 
-- is a column in the object database table.
-- both standard and custom objects have items.
-- Property (Property ) Objects in this example have items such as Address (Address ) and Price (Price ).
-**Record** 
-- is a line in the object database table.
-- is the actual data associated with the object.
-- example (211 Charles Street).
+- **Salesforce Application** - A set of objects, items, and other features that support business processes.
+- **Object** - A table in the Salesforce database that stores certain types of information.
+- **Standard Object** - (Trading partners, business owners, etc.).
+- **Custom Object** - (Figure Property (Property ) Objects, etc.).
+- **Organization** - An organization refers to a specific instance of Salesforce.
+- **Item** 
+    - is a column in the object database table.
+    - both standard and custom objects have items.
+    - Property (Property ) Objects in this example have items such as Address (Address ) and Price (Price ).
+- **Record** 
+    - is a line in the object database table.
+    - is the actual data associated with the object.
+    - example (211 Charles Street).
 
 Trailhead Playground
 - an organization is a safe environment where you can practice your skills while learning before they can be used for real work.
