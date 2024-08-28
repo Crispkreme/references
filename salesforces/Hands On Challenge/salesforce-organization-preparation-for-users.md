@@ -40,6 +40,7 @@ Set Up the Exchange Rate In Prepare Your Salesforce Org for Users [YouTube](http
 
 - then click **New button**
 - Set the euro using the following information:
+
 | **Field (Item)**                         | **Value (value)**      |
 | ---------------------------------------- | ---------------------- |
 | Currency Type (By currency species)      | **EUR – Euro (Euro)**  |
@@ -64,6 +65,7 @@ Set Up the Exchange Rate In Prepare Your Salesforce Org for Users [YouTube](http
 - look for **New button**
 - then click it
 - then enter the following details
+
 | **Field (Item)**                               | **Value (value)**                                            |
 | ---------------------------------------------- | ------------------------------------------------------------ |
 | Opportunity Name (Trade name)                  | Euro Currency Test **(Euro currency test)**                  |
