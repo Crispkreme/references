@@ -4,7 +4,7 @@ it can be used if you have a sales in different countries
 ## Youtube
 How to activate multiple currencies in Salesforce [YouTube](https://www.youtube.com/watch?v=6m9YhQEHhC8).
 Set Up the Exchange Rate In Prepare Your Salesforce Org for Users [YouTube](https://www.youtube.com/watch?v=hX3hqIdpnN4).
-Set Up the Exchange Rate In Prepare Your Salesforce Org for Users [YouTube](https://www.youtube.com/watch?v=hX3hqIdpnN4).
+Customize the Home Page [YouTube](https://www.youtube.com/watch?v=TCOY5YhNnHA).
 
 ## Validation of multi-currency
 - go to the testing account
@@ -178,3 +178,98 @@ Set Up the Exchange Rate In Prepare Your Salesforce Org for Users [YouTube](http
     - Euro (Euro ): 1.13
 - then click **Save button**
 - then go back to the **Test the exchange rate in a business talk** to test
+
+## Create a new home page using Lightning Application Builder
+
+- open your account
+- Gear icon Settings icon Click,[Setup (Settings )] Select.
+
+[Salesforce Organization](../images/salesforce-organization-preparation-for-users/saleforce-2.png "Salesforce Organization")
+
+- the go the find **Quick Find (Quick Search)** 
+- then search for **Lightning App**
+- click the **view this page in Salesforce Classic.**
+
+[Salesforce Organization](../images/salesforce-organization-preparation-for-users/saleforce-19.png "Salesforce Organization")
+
+- click the **New Button**
+- then **Create a new Lightning Page**
+- select the **Homepage**
+- click the **Next Button**
+
+[Salesforce Organization](../images/salesforce-organization-preparation-for-users/saleforce-20.png "Salesforce Organization")
+
+- then write the **Support Home Page** in the label input
+- click the **Next Button**
+- select the **Standard Home Page (Standard Home Page )**
+
+[Salesforce Organization](../images/salesforce-organization-preparation-for-users/saleforce-21.png "Salesforce Organization")
+
+- search **Recent Items (Recently used data )**
+- drag the components into any part of the canvass
+
+[Salesforce Organization](../images/salesforce-organization-preparation-for-users/saleforce-22.png "Salesforce Organization")
+
+- go to the Label then select the **Custom**
+- then add the **Recent Cases** inside the Custom Label
+- then find the **API Anomaly Event Store**
+- then click the **Select**
+
+[Salesforce Organization](../images/salesforce-organization-preparation-for-users/saleforce-23.png "Salesforce Organization")
+
+- Select the left arrow and go to the **[Available (Available )]** column.
+- **[Available (Available )]** From **[Case (Case )]** 
+- Select and click the right arrow to go to **[Selected (Selected )]** column.
+
+[Salesforce Organization](../images/salesforce-organization-preparation-for-users/saleforce-24.png "Salesforce Organization")
+
+- click the **OK Button**
+- then add **5** in **Number of Records to Display** input
+- search **[Chatter Feed (Chatter Feed )]**
+- drag the components into any part of the canvass
+
+[Salesforce Organization](../images/salesforce-organization-preparation-for-users/saleforce-25.png "Salesforce Organization")
+
+- change the **Feed Type** into **[To Me (To yourself )]** then select it.
+
+[Salesforce Organization](../images/salesforce-organization-preparation-for-users/saleforce-26.png "Salesforce Organization")
+
+- [Today’s Tasks ( Today's ToDo )] Drag the component anywhere on the canvas.
+- [Today's Events (Today's behavior )] Drag the component anywhere on the canvas.
+
+[Salesforce Organization](../images/salesforce-organization-preparation-for-users/saleforce-27.png "Salesforce Organization")
+
+- [Rich Text (Rich text )] Drag the component to the box [Today's Tasks (Today's ToDo )]. A text entry item appears under the box.
+
+[Salesforce Organization](../images/salesforce-organization-preparation-for-users/saleforce-28.png "Salesforce Organization")
+
+- In this text input item,Be sure to check the Salesforce Trust site. (Be sure to check the Salesforce Trust site. ) Enter
+- Salesforce Trust Highlight the text in[Link (Link )] Select a button.
+- [URL]https://trust.salesforce.com Enter
+
+[Salesforce Organization](../images/salesforce-organization-preparation-for-users/saleforce-29.png "Salesforce Organization")
+
+## Activate new homepage
+
+- click the **Save** button.
+- click the **Activation** button.
+
+[Salesforce Organization](../images/salesforce-organization-preparation-for-users/saleforce-30.png "Salesforce Organization")
+
+- then **Activation: Support Homepage** modal will display
+- then select the **App and Profile**
+- then click the **Assign to Apps and Profile**
+
+[Salesforce Organization](../images/salesforce-organization-preparation-for-users/saleforce-31.png "Salesforce Organization")
+
+- then **Select Apps** modal will display
+- check the **Service console**
+- then click the **Next Button**
+- then **Select Profiles** modal will display
+- look for the **Custom: Support Profile (Custom: Support Profile )** and **System Administrator (System Administrator )**
+
+[Salesforce Organization](../images/salesforce-organization-preparation-for-users/saleforce-32.png "Salesforce Organization")
+
+[Salesforce Organization](../images/salesforce-organization-preparation-for-users/saleforce-33.png "Salesforce Organization")
+
+- click the **Next** button.
