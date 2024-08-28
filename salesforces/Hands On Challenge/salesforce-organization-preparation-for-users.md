@@ -40,12 +40,11 @@ Set Up the Exchange Rate In Prepare Your Salesforce Org for Users [YouTube](http
 
 - then click **New button**
 - Set the euro using the following information:
-| **Field (Item )**                        | **Value (value )**     |
+| **Field (Item)**                         | **Value (value)**      |
 | ---------------------------------------- | ---------------------- |
-| Currency Type (By currency species )     | **EUR – Euro (Euro )** |
-| Conversion Rate (Conversion rate )       | 1.5                    |
-| Decimal Places (Decimal point position ) | 2                      |
-| ---------------------------------------- | ---------------------- |
+| Currency Type (By currency species)      | **EUR – Euro (Euro)**  |
+| Conversion Rate (Conversion rate)        | 1.5                    |
+| Decimal Places (Decimal point position)  | 2                      |
 
 - then click **Save button**
 
@@ -65,15 +64,14 @@ Set Up the Exchange Rate In Prepare Your Salesforce Org for Users [YouTube](http
 - look for **New button**
 - then click it
 - then enter the following details
-| **Field (Item )**                              | **Value (value )**                                           |
+| **Field (Item)**                               | **Value (value)**                                            |
 | ---------------------------------------------- | ------------------------------------------------------------ |
-| Opportunity Name (Trade name )                 | Euro Currency Test **(Euro currency test)**                  |
-| Account Name (Trading Partner Name )           | United Oil & Gas, UK **(United Oil & Gas (United Kingdom))** |
-| Opportunity Currency (Business talk currency ) | Euro **(Euro)**                                              |
-| Close Date (Scheduled completion date )        | (End of this month )                                         |
-| Stage (Phase )                                 | Closed Won **(Commercialization)**                           |
-| Amount (Amount )                               | 10000 **(0 is 4 pieces )**                                   |
-| ---------------------------------------------- | ------------------------------------------------------------ |
+| Opportunity Name (Trade name)                  | Euro Currency Test **(Euro currency test)**                  |
+| Account Name (Trading Partner Name)            | United Oil & Gas, UK **(United Oil & Gas (United Kingdom))** |
+| Opportunity Currency (Business talk currency)  | Euro **(Euro)**                                              |
+| Close Date (Scheduled completion date)         | End of this month **(End of this month)**                    |
+| Stage (Phase)                                  | Closed Won **(Commercialization)**                           |
+| Amount (Amount)                                | 10000 **(0 is 4 pieces)**                                    |
 
 [Salesforce Organization](../images/salesforce-organization-preparation-for-users/saleforce-10.png "Salesforce Organization")
 
