@@ -1,11 +1,11 @@
 ## Paving the way for business success with Salesforce data platforms
 
-Salesforce 
+**Salesforce**
 - provides a way to store customer data, develop prospects, and collaborate with colleagues and others. 
 - is like a house just a kitchen. There are many other features.
 - comes with standard features that track common sales objects such as business partners, business owners, and leads.
 
-Salesforce Platform
+**Salesforce Platform**
 - The platform allows you to make your features company-specific with flexible customization and development. With its own business application, everyone can have greater success.
 
 | Corporate activities | Support functions |
@@ -16,22 +16,22 @@ Salesforce Platform
 | Collaboration with colleagues, partners, and customers | Slack, Chatter, community to connect with the company |
 | Marketing to the audience | Marketing Cloud Engagement for Managing Customer Journey |
 
-Salesforce Services:
+**Salesforce Services:**
 - We use Salesforce to manage our operations and help streamline complex order creation and fulfillment processes.
 - We use Salesforce to manage sales and customer service nationwide.
 - We use Salesforce to manage our existing customers and prospects and are constantly looking for new ways to innovate with Salesforce services.
 - We use Salesforce to connect employees and streamline home sales.
 
-DreamHouse 
+**Dream House** 
 - is a popular sample application for Salesforce developers that demonstrates how to build real estate applications on the Salesforce platform.
 
-Dreamhouse functionalities
+**Dreamhouse functionalities**
 - in this application customers can browse the homes for sale and create a favorite list of properties of interest.
 - to create a series of custom features.
 - custom feature to edit and browse information about the properties for sale and track prospective buyers.
 - is a real estate company, it has unique needs for industry and business models.
 
-Terms
+**Terms**
 - **Salesforce Application** - A set of objects, items, and other features that support business processes.
 - **Object** - A table in the Salesforce database that stores certain types of information.
 - **Standard Object** - (Trading partners, business owners, etc.).
