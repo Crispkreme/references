@@ -2,9 +2,9 @@
 it can be used if you have a sales in different countries
 
 ## Youtube
-How to activate multiple currencies in Salesforce [YouTube](https://www.youtube.com/watch?v=6m9YhQEHhC8).
-Set Up the Exchange Rate In Prepare Your Salesforce Org for Users [YouTube](https://www.youtube.com/watch?v=hX3hqIdpnN4).
-Customize the Home Page [YouTube](https://www.youtube.com/watch?v=TCOY5YhNnHA).
+- How to activate multiple currencies in Salesforce [YouTube](https://www.youtube.com/watch?v=6m9YhQEHhC8).
+- Set Up the Exchange Rate In Prepare Your Salesforce Org for Users [YouTube](https://www.youtube.com/watch?v=hX3hqIdpnN4).
+- Customize the Home Page [YouTube](https://www.youtube.com/watch?v=TCOY5YhNnHA).
 
 ## Validation of multi-currency
 - go to the testing account
@@ -273,3 +273,61 @@ Customize the Home Page [YouTube](https://www.youtube.com/watch?v=TCOY5YhNnHA).
 [Salesforce Organization](../images/salesforce-organization-preparation-for-users/saleforce-33.png "Salesforce Organization")
 
 - click the **Next** button.
+
+## Create a new list view
+
+- go to the main home page
+- then find the app launcher
+- then look for the sales
+- then click the sales
+
+[Salesforce Organization](../images/salesforce-organization-preparation-for-users/saleforce-7.png "Salesforce Organization")
+
+- look for **Plan My Accounts**
+- then click the **View Accounts**
+
+[Salesforce Organization](../images/salesforce-organization-preparation-for-users/saleforce-34.png "Salesforce Organization")
+
+- then look for the **List View Controls**
+- then click for the **New** button
+
+[Salesforce Organization](../images/salesforce-organization-preparation-for-users/saleforce-35.png "Salesforce Organization")
+
+- Enter the following information in the section.
+    - List Name (List name ): Energy and Biotech Accounts
+    - List API Name: Energy_and_Biotech_Accounts
+    - Who sees this list view (Who displays this list view ): All users can view this list view
+
+[Salesforce Organization](../images/salesforce-organization-preparation-for-users/saleforce-36.png "Salesforce Organization")
+
+- then click for the **Save** button
+
+## Edit the search criteria for the list
+
+- go to the filters.
+- Filter by Owner (Narrow by Owner ): All accounts (All trading partners )
+- click **Done** button
+
+[Salesforce Organization](../images/salesforce-organization-preparation-for-users/saleforce-37.png "Salesforce Organization")
+
+- click the **[Add Filter (Add search criteria )]**.
+    - Field (Item ) = **Industry** (Industry )
+    - Operator (operator ) = **equals** (Matches the following string )
+    - Value (value ) = **Energy, Biotechnology** (Energy, biotechnology )
+- then click the **Done** button.
+- then click the **Save** button.
+
+[Salesforce Organization](../images/salesforce-organization-preparation-for-users/saleforce-38.png "Salesforce Organization")
+
+## Select the item to display
+
+- List view control at the top right Gear icon Gear icon with down arrow Click
+- [Select Fields to Display (Select item to display )] 
+- Select
+- [Available Fields (Selectable items )] From list [Industry (Industry )] Select
+- [Add (Add )] Arrow (>Click ).
+- [Save (Save )] Click.
+- [Hide Filters (Hide search criteria )] 
+- (Click the funnel icon in the upper right ).
+
+[Salesforce Organization](../images/salesforce-organization-preparation-for-users/saleforce-39.png "Salesforce Organization")
