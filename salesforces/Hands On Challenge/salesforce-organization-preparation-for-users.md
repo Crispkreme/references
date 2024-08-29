@@ -331,3 +331,50 @@ it can be used if you have a sales in different countries
 - (Click the funnel icon in the upper right ).
 
 [Salesforce Organization](../images/salesforce-organization-preparation-for-users/saleforce-39.png "Salesforce Organization")
+
+## Creating a Chatter group for all sales and all support
+
+- go to the main home page
+- then find the app launcher
+- then look for the groups
+- then click the groups
+- click the **New** button
+
+[Salesforce Organization](../images/salesforce-organization-preparation-for-users/saleforce-40.png "Salesforce Organization")
+
+- Enter the information for the new group.
+    - Group Name (Group Name): All Sales
+    - Description (Description): Collaboration space for all things related to Sales (A place to collaborate on everything about sales)
+    - Access Type (By Access Species): Public (Published)
+- click the **Save & Next** button
+- upload group photo
+- click the **Done** button
+- click the **Share an update...** button
+- add the folling text **Welcome to the All Sales group, which replaces the All Sales email list.** inside the input box.
+- click the **Share** button
+
+[Salesforce Organization](../images/salesforce-organization-preparation-for-users/saleforce-41.png "Salesforce Organization")
+
+## create the "All Support" Chatter group.
+
+- go to the main home page
+- then find the app launcher
+- then look for the groups
+- then click the groups
+- click the **New** button
+
+[Salesforce Organization](../images/salesforce-organization-preparation-for-users/saleforce-40.png "Salesforce Organization")
+
+- Enter the information for the new group.
+    - Group Name (Group Name): All Support
+    - Description (Description): Collaboration space for all things related to Support
+    - Access Type (By Access Species): Private (Private)
+- click the **Save & Next** button
+- upload group photo
+- click the **Done** button
+- click the **Share an update...** button
+- add the folling text **Welcome to the All Support group, which replaces the All Support email list.** inside the input box.
+- click the **Share** button
+- add another share message in all support
+- add the folling text **Hi Support people!Here is some quick training on how to use the @mention feature, to bring another user or even an entire group into a Chatter conversation. https://help.salesforce.com/articleView?id=collab_add_mentioning_people.htm&type=5** inside the input box.
+- click the **Share** button
