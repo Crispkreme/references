@@ -54,7 +54,7 @@
 - Chatter also help the customer to interact to the executer of the company to resolve the problem that discuss the details of the products.
 - Chatter helps you to collaborate with the people inside/within the organization. 
 
-**wht do we use chatter?**
+**why do we use chatter?**
 - Post status updates regarding the day to day tasks.
 - Share our ideas in real time.
 - Private collaborate on the sensitive projects.
@@ -111,6 +111,7 @@
 ## Exercises
 
 **Reference:** Manage Chatter | Customize an Org to Support a New Business Unit [YouTube](https://www.youtube.com/watch?v=qbe126dPOWM) 
+
 **Follow trading partner records**
 
 - open your account
@@ -131,7 +132,7 @@
 
 ![Salesforce Organization](../images/customize-your-organization-to-support-new-business-units/customize-organization-7.png "Salesforce Organization")
 
-## create a case with your trading partner Edge Communications.
+## Create a case with your trading partner Edge Communications.
 
 - scroll down and look for cases
 - then click the **New Case** button.
@@ -148,3 +149,41 @@
 ![Salesforce Organization](../images/customize-your-organization-to-support-new-business-units/customize-organization-8.png "Salesforce Organization")
 
 - then click the **Save** button.
+
+## Create a Chatter group
+
+- then go to the app launcher
+- then search for **Groups**
+
+![Salesforce Organization](../images/customize-your-organization-to-support-new-business-units/customize-organization-9.png "Salesforce Organization")
+
+- then click the **New** button
+- add the following the data:
+
+| **Field (Item)**                   | **Value (value)**                                                                                                     |
+|------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| Group Name (Group Name)            | Edge Communications Customer Support (Edge Communications Customer Support)                                           |
+| Description (Description)          | Collaboration space for Customer Support teams related to Edge Communications (Customer Support Team Collaboration Space Related to Edge Communications) |
+| Access Type (By Access Species)    | Private (Private)                                                                                                     |
+| Allow Customers (Allow Customers)  | Select (On)                                                                                                           |
+
+![Salesforce Organization](../images/customize-your-organization-to-support-new-business-units/customize-organization-10.png "Salesforce Organization")
+
+- click **Save&Next** button
+- upload group image and click **Next** button
+- then add members just add you created user account
+- click **Add** button
+- click **Done** button
+
+![Salesforce Organization](../images/customize-your-organization-to-support-new-business-units/customize-organization-11.png "Salesforce Organization")
+
+- saving click the **Share Update** button
+- then add the following text **Welcome to the Edge Communications Customer Support group.We will use this space to share efficiency and workflow improvement ideas for Edge Communications customer support cases.**
+- click the **Share** button
+
+## Ask Member to join in the group
+
+- look for the **Poll** button
+- then click the **Ask** button
+
+![Salesforce Organization](../images/customize-your-organization-to-support-new-business-units/customize-organization-12.png "Salesforce Organization")
