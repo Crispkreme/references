@@ -384,3 +384,5 @@ Salesforce Trailhead - Configure an Email Letterhead and Template [YouTube](http
 | Description          | Laptop does not turn on when the power button is pressed |
 
 - click the **Save** button
+
+## Email letterhead and template settings
