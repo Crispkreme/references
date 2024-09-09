@@ -2,6 +2,7 @@
 
 - run the docker before starting
 - create a folder for your docker file
+
 Terminal: `Ubuntu`  
 Command:  
 ```sh
