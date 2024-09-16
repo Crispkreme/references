@@ -96,7 +96,8 @@ Command:
 
     # install PM2 depedencies
     npm install pm2 -g
-    
+
+    # clone the repository into aws server
     # go into the index.js of the server file inside the server folder
     cd server
     ls
