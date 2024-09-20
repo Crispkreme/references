@@ -105,6 +105,14 @@ Command:
 Terminal: `Ubuntu`  
 Command:  
 ```sh
+    
+    Data-Types
+
+    Primitive Types:
+        - Integral Numbers
+        - Real Number
+        - Characters
+        - Boolean
 
     Example:
     | **Car**                 |  C# Type | .NET Types | Bytes | Range
@@ -120,11 +128,157 @@ Command:
     | ----------------------- |--------- | ---------- | ----- | --------------------------- |
     | Characters              | char     | Char       | 2     | Unicode Characters          |
     | ----------------------- |--------- | ---------- | ----- | --------------------------- |
-    | Boolean                 | boolean  | Boolean    | 1     | True / False                |
-    
+    | Boolean                 | bool     | Boolean    | 1     | True / False                |
+
+    float number = 1.2f; # f - it tells compiler to treat it as a float
+    decimal number = 1.2m; # m - it tells compiler to treat it as a decimal
+
+    Non Primitive Types:
+        - String
+        - Array
+        - Enum
+        - Class
 
 ```
 
+**Overflowing**
+Terminal: `Ubuntu`  
+Command:  
+```sh
+    
+    # checking for overflowing
+    checked 
+    {
+        byte number = 255;
+        number = number + 1;
+    }
+
+```
+
+**Scope**
+- where a variable/constants has a meaning.
+- it can be access through its children
+
+Terminal: `Ubuntu`  
+Command:  
+```sh
+    
+    {
+        # a or b cannot access it parent;
+        # a can access the b or c as a child;
+        byte a = 1;
+        {
+            byte b = 2;
+            {
+                byte c = 3;
+            }
+        }
+    }
+
+    Examples:
+    namespace Variables 
+    {
+        class Program
+        {
+            static void Main(string[] args) 
+            {
+                byte number = 2;
+                int count = 10;
+                float totalPrice = 20.95f;
+                char character = 'A';
+                string firstname = "Marvin"
+                bool isWorking = false;
+
+                Console.WriteLine(number);
+                Console.WriteLine(count);
+                Console.WriteLine(totalPrice);
+                Console.WriteLine(character);
+                Console.WriteLine(firstname);
+                Console.WriteLine(isWorking);
+
+                # format string
+                Console.WriteLine("{0} {1}", byte.MinValue, byte.MaxValue);
+                Console.WriteLine("{0} {1}", float.MinValue, float.MaxValue);
+            }
+        }
+    }
+
+```
+
+**Type of Converstion**
+
+Terminal: `Ubuntu`  
+Command:  
+```sh
+    
+    # EXPLICIT TYPE CONVERSION
+    float f = 1.0f;
+    int i = (int)f;
+
+    # NON COMPATIBLE TYPE CONVERSION
+    string s = "1";
+    int i = Convert.ToInt32(s);
+    int j = int.Parse(s);
+
+    # CONVERT CLASS
+    - ToByte();
+    - ToInt16();
+    - ToInt32();
+    - ToInt64();
+
+    Examples:
+    namespace TypeConversion 
+    {
+        class Program
+        {
+            static void Main(string[] args) 
+            {
+                # EXPLICIT TYPE EXAMPLE:
+
+                    # Scenario 1:
+                    byte b = 1;
+                    int i = b;
+                    Console.WriteLine(i);
+
+                    # Scenario 2:
+                    int i = 1000;
+                    byte b = (byte) i;
+                    Console.WriteLine(b);
+
+                # NON COMPATIBLE TYPE EXAMPLE:
+
+                    # Scenario 1:
+                    var number = "1234";
+                    int i = Convert.ToInt32(number);
+                    Console.WriteLine(i)
+
+                    # Scenario 2:
+                    try
+                    {
+                        var number = "1234";
+                        int b = Convert.ToByte(number);
+                        Console.WriteLine(b)
+                    }
+                    catch (Exception)
+                    {
+                        Console.WriteLine("the number cannot converted to a byte.");
+                    }
+
+                    # Scenario 3:
+                    try
+                    {
+                        var str = "true";
+                        int b = Convert.ToBoolean(str);
+                        Console.WriteLine(b)
+                    }
+                    catch (Exception)
+                    {
+                        Console.WriteLine("the number cannot converted to a byte.");
+                    }
+            }
+        }
+    }
+```
 ## C# 12*
 ## .Net 8
 ## .NET CLI
