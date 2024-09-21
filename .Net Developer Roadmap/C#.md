@@ -1,4 +1,4 @@
-## Learn C#
+## C# Fundaments
 
 **Introduction**
 What is the difference of C# vs .NET
@@ -279,6 +279,46 @@ Command:
         }
     }
 ```
+
+**C# Operators**
+Terminal: `Ubuntu`  
+Command:  
+```sh
+    
+    # Arithmetic Operators
+    # Comparison Operators
+    # Assignment Operators
+    # Logical Operators
+    # Bitwise Operators
+
+    Examples:
+    namespace Operators 
+    {
+        class Program
+        {
+            static void Main(string[] args) 
+            {
+                var a = 10;
+                var b = 3;
+                var c = 5;
+
+                Console.WriteLine( a + b );
+                Console.WriteLine( a / b );
+                Console.WriteLine( (float)a / (float)b );
+                Console.WriteLine( a + b * c);
+                Console.WriteLine( (a + b) * c);
+                Console.WriteLine( a > b );
+                Console.WriteLine( a == b );
+                Console.WriteLine( a != b );
+                Console.WriteLine( !(a != b) );
+                Console.WriteLine( c > b && c > a );
+                Console.WriteLine( c > b && c == a );
+                Console.WriteLine( c > b || c == a );
+            }
+        }
+    }
+```
+
 ## C# 12*
 ## .Net 8
 ## .NET CLI
