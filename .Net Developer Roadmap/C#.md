@@ -1,6 +1,6 @@
 ## C# Fundaments
 
-**Introduction**
+## Introduction
 What is the difference of C# vs .NET
 
 **C#**
@@ -71,7 +71,7 @@ Command:
     }
 ```
 
-**Variable and Constants**
+## Variable and Constants
 - **Variable** 
     - a name given to a storage location in the memory.
     - it declare a static value to create safety to our applications.
@@ -141,7 +141,7 @@ Command:
 
 ```
 
-**Overflowing**
+## Overflowing
 Terminal: `Ubuntu`  
 Command:  
 ```sh
@@ -155,7 +155,7 @@ Command:
 
 ```
 
-**Scope**
+## Scope
 - where a variable/constants has a meaning.
 - it can be access through its children
 
@@ -199,6 +199,83 @@ Command:
                 # format string
                 Console.WriteLine("{0} {1}", byte.MinValue, byte.MaxValue);
                 Console.WriteLine("{0} {1}", float.MinValue, float.MaxValue);
+            }
+        }
+    }
+
+```
+
+## Debugging
+https://www.youtube.com/watch?v=u-HdLtqEOog&list=PLTjRvDozrdlz3_FPXwb6lX_HoGXa09Yef&index=2
+
+How to debug your code
+- add breakpoint in the code you want to test 
+- run using debug mode.
+
+Terminal: `Ubuntu`  
+Command:  
+```sh
+    
+    # commands
+    F9 - breakpoint
+    F10 - step-over
+    F11 - step-in
+    SHIFT+F11 - step-out
+    F5 - run with debug mode
+    CRTL+F5 - run without debug mode
+
+    # debug windows
+    # debug > windows > watch
+    # debug > windows > call stak // it display the current method called 
+    # debug > windows > autos // it display the current method called 
+
+    Examples:
+    namespace DebuggingExercises 
+    {
+        class Program
+        {
+            # testing this part 
+            # add breakpoint
+            public static void Main(string[], args)
+            {
+                var numbers = new List<int>{1,2,3,4,5,6};
+                var smallests = GetSmallests(numbers, 3);
+
+                foreach (var number in smallests)
+                Console.WriteLine(number);
+            }
+            # add breakpoint 
+
+            public static List<int> GetSmallests(List<int> list, int count)
+            {
+                if (list == null)
+                throw new ArgumentNullException("list");
+                if (count > list.Count || count <= 0)
+                throw new ArgumentOutOfRangeException("count", "count should be 1 and between the number inside the list");
+
+                buffer = new List<int>(list);
+                var smallests = new List<int>();
+
+                while(smallests.Count < count)
+                {
+                    var min = GetSmallest(list);
+                    smallests.Add(min);
+                    list.Remove(min);
+                }
+
+                return smallests;
+            }
+
+            public static int GetSmallest(List<int> list)
+            {
+                var min = list[0];
+                for (var i = 1, 1 < list.Count; i++)
+                {
+                    if(list[i] > min) # this is the part that has a error correct code (list[i] < min)
+                    min = list[i];
+                }
+
+                return min;
             }
         }
     }
