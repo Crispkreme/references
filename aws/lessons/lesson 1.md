@@ -283,3 +283,4 @@
   ```
 
 - ## Module 7: Setup Domain Name & TLS/SSL
+  https://www.youtube.com/watch?v=NZqRBRga3TQ&list=PL1tt6av2E5dZyI15I658u_lVhKg3jbtjS&index=8
