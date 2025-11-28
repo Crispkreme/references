@@ -240,6 +240,46 @@
   ```
 
 - ## Module 4: Deploy Workers
+
+  https://www.youtube.com/watch?v=Srz7rU01cnM&list=PL1tt6av2E5dZyI15I658u_lVhKg3jbtjS&index=5
+
 - ## Module 5: Deploy Scheduler
+
+  https://www.youtube.com/watch?v=WwlII2dQl30&list=PL1tt6av2E5dZyI15I658u_lVhKg3jbtjS&index=6
+
 - ## Module 6: Migrate from SQLite to MySQL
+
+  Terminal: `Ubuntu`  
+   Command:
+
+  ```sh
+      # install mysql
+      # do not use the user use the ubuntu for admin
+      # assign new root password
+      sudo apt install -y mysql-server
+      sudo mysql
+      ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Sample.Data@0896';
+
+      # run mysql installation
+      mysql_secure_installation
+
+      # Press y|Y for Yes, any other key for No: y
+      # Change the password for root ? ((Press y|Y for Yes, any other key for No) : n
+      # Remove anonymous users? (Press y|Y for Yes, any other key for No) : y
+      # Disallow root login remotely? (Press y|Y for Yes, any other key for No) : y
+      # Remove test database and access to it? (Press y|Y for Yes, any other key for No) : y
+      # Reload privilege tables now? (Press y|Y for Yes, any other key for No) : y
+
+      # login to your mysql root user
+      mysql -u root -p
+
+      # create a table
+      CREATE DATABASE `freelance-portfolio-app` CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+      CREATE USER 'freelance-portfolio-app'@'localhost' IDENTIFIED BY 'Sample.Data@0896';
+      GRANT ALL PRIVILEGES ON `freelance-portfolio-app`.* TO 'freelance-portfolio-app'@'localhost';
+      FLUSH PRIVILEGES;
+
+      # update the .env file based on the mysql credentials above
+  ```
+
 - ## Module 7: Setup Domain Name & TLS/SSL
