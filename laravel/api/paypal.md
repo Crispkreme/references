@@ -1,3 +1,5 @@
+https://srmklive.github.io/laravel-paypal/docs.html
+
 - go here create an account https://developer.paypal.com/home/
 - paste this credentials to your .env file
 Terminal: `Ubuntu`  
