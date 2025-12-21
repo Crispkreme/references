@@ -123,6 +123,8 @@
 
         # change the user to deployment
         sudo su marvin-ramos
+        cd ~/
+        pwd
 
         # create a github deployment key
         ssh-keygen -f /home/marvin-ramos/.ssh/github_rsa -t rsa
